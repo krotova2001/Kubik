@@ -1,3 +1,4 @@
+//класс запуска игры
 #pragma once
 #include <iostream>
 #include "Logic.h"
@@ -5,7 +6,7 @@
 using namespace std;
 class Game // класс самой игры, статический
 {
-	static int grani;
+	static int grani; // хранение настрек чтобы передать их следующему классу
 	static int vid;
 public:
 	static void SetGrani(int g) 
@@ -16,7 +17,7 @@ public:
 	{
 		vid = v;
 	}
-	static int GetGrani(){ return grani; }
+	static int GetGrani(){ return grani; } // чтобы передать классу Logic
 	static void start();
 };
 

@@ -1,13 +1,15 @@
 ﻿#include <iostream>
-using namespace std;
 #include "Game.h"
 #include <ctime>
+using namespace std;
 
 int main()
 {
-    srand(time(0));
+    srand(time(0)); // для слуйсайности
     int grani;
     int vid; // выбор кол-ва граней и вида
+
+    // менюшечка
     cout << "Hi please, choose a cube!\n";
     cout << "1 - four \n";
     cout << "2 - six \n";
@@ -19,6 +21,7 @@ int main()
     cin >> vid;
     system("cls");
    
+    //выбор граней и устанвка их в нужный класс
     switch (grani)
     {
     case 1:
