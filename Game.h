@@ -16,6 +16,7 @@ public:
 	{
 		vid = v;
 	}
+	static int GetGrani(){ return grani; }
 	static void start();
 };
 

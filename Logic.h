@@ -3,16 +3,19 @@
 
 class Logic
 {
-	int grani; // количество граней
+	int grani;// количество граней
 public:
-	Logic()	{}
+	Logic()
+	{ 
+		
+	}
 	void SetGrani(int g)
 	{
 		grani = g;
 	}
 	int brosoc () // бросание кубика
 	{
-		return grani -1;
+		return rand()%grani+1;
 	}
 };
 

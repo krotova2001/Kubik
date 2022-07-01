@@ -5,22 +5,37 @@ using namespace std;
 class Decorator
 {
 public:
-	Logic P;
+	int grani;
 	int vid = 0;
-	Decorator(int v)
+	Logic P;
+	Decorator(int v, int g)
 	{
+		grani = g;
 		vid = v;
 	}
 	void Draw()
 	{
+		P.SetGrani(grani);
 		if (vid)
 		{
-			cout << "\nPlayer - 1\n" << P.brosoc();
-			cout << "\nPlayer - 2\n" << P.brosoc();
+			cout << "\nPlayer - 1\n";
+			cout << "-----\n";
+			cout << "|   |\n";
+			cout << "| "<< P.brosoc()<<" | \n";
+			cout << "-----\n";
+			cout << "\n";
+			cout << "\nPlayer - 2\n";
+			cout << "-----\n";
+			cout << "|   |\n";
+			cout << "| " << P.brosoc() << " | \n";
+			cout << "-----\n";
+			cout << "\n";
 		}
 		else
 		{
-			cout << "grani\n";
+			cout << "\nPlayer - 1\n" << P.brosoc();
+			cout << "\nPlayer - 2\n" << P.brosoc();
+			cout << "\n";
 		}
 	}
 };

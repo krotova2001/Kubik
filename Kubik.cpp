@@ -19,8 +19,22 @@ int main()
     cin >> vid;
     system("cls");
    
-    Game::SetGrani(grani);
-    Game::SetVid(vid);
+    switch (grani)
+    {
+    case 1:
+        Game::SetGrani(4);
+        break;
+    case 2:
+        Game::SetGrani(6);
+        break;
+    case 3:
+        Game::SetGrani(8);
+        break;
+    default:
+        Game::SetGrani(4);
+        break;
+    }
+    Game::SetVid(vid-1);
     Game::start(); // передаем настройки игры и запускаем
 }
 
