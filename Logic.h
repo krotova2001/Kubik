@@ -6,8 +6,7 @@ class Logic
 {
 	int grani;// количество граней
 public:
-	Logic() {}
-	void SetGrani(int g) // установка граней
+	Logic(int g) 
 	{
 		grani = g;
 	}

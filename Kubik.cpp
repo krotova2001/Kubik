@@ -5,11 +5,16 @@ using namespace std;
 
 int main()
 {
-    srand(time(0)); // для слуйсайности
+    srand(time(0)); // для случайности
     int grani;
     int vid; // выбор кол-ва граней и вида
+    string name1, name2;
 
     // менюшечка
+    cout << "Hi please, Player's 1 name\n";
+    cin >> name1;
+    cout << "Player's 2 name\n";
+    cin >> name2;
     cout << "Hi please, choose a cube!\n";
     cout << "1 - four \n";
     cout << "2 - six \n";
@@ -38,6 +43,8 @@ int main()
         break;
     }
     Game::SetVid(vid-1);
+    Game::SetName1(name1);
+    Game::SetName2(name2);
     Game::start(); // передаем настройки игры и запускаем
 }
 
