@@ -6,7 +6,8 @@ string Game::name_2;
 void Game::start()
 {
 	Logic L(grani);
-	Decorator_base* D;
+	Decorator_base* D; // указатель на базовый класс
+	// здесь поределяем вид кубиков путем присваевания ссылки на один из декораторов
 	if (vid == 1)
 	{
 		Decorator_1 D1;

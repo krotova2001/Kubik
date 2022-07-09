@@ -8,26 +8,26 @@ using namespace std;
 class Game // класс самой игры, статический
 {public:
 	static int grani; // хранение настрек чтобы передать их следующему классу
-	static int vid;
-	static string name_1;
-	static string name_2;
+	static int vid; // вид декоратора
+	static string name_1; // имя первого игрока
+	static string name_2; // имя второго игрока
 
-	static void SetGrani(int g) 
+	static void SetGrani(int g)  // устновка граней
 	{
 		grani = g;
 	}
-	static void SetVid(int v)
+	static void SetVid(int v) // установка вида
 	{
 		vid = v;
 	}
-	static void SetName1(string name)
+	static void SetName1(string name) // имя первого участника
 	{
 		name_1 = name;
 	}
-	static void SetName2(string name)
+	static void SetName2(string name)// имя второго участника
 	{
 		name_2 = name;
 	}
-	static void start();
+	static void start(); // старт игры
 };
 
