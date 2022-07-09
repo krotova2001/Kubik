@@ -6,7 +6,7 @@ class Decorator_2 :
 public:
     void Draw(int gran, string player)
     {
-        system("cls");
+      
         cout << "\nPlayer - " << player <<"\n";
         cout << "-----\n";
         cout << "|   |\n";

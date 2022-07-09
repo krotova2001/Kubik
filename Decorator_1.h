@@ -6,7 +6,7 @@ class Decorator_1 :
 public:
     void Draw(int gran, string player)
     {
-        system("cls");
+      
         cout << "Player " << player << " --> " << gran << "\n";
     }
 };

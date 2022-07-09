@@ -11,7 +11,7 @@ public:
 	}
 	virtual void Draw(int gran, string name) // чистая виртуальная функция для переопределения
 	{
-		system("cls");
+		
 		cout << "Player - " <<name << "--> " << gran << "\n";
 	}
 };

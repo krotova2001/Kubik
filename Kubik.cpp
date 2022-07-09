@@ -42,9 +42,9 @@ int main()
         Game::SetGrani(4);
         break;
     }
-    Game::SetVid(vid-1);
+    Game::SetVid(vid);
     Game::SetName1(name1);
-    Game::SetName2(name2);
+    Game::SetName1(name2);
     Game::start(); // передаем настройки игры и запускаем
 }
 
